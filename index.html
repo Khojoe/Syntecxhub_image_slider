@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="slider.css" />
+</head>
+
+<body>
+
+  <div class="slider-wrap">
+    <div class="slider-container" id="slider" aria-roledescription="carousel">
+
+      <div class="slides-track" id="track">
+
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 5">
+          <div class="slide-bg" style="background: linear-gradient(135deg, #1D9E75 0%, #085041 100%);"></div>
+          <div class="slide-content">
+            <p class="slide-label">Nature</p>
+            <h3 class="slide-title">Into the Wild</h3>
+            <p class="slide-sub">Where silence speaks louder than words</p>
+          </div>
+        </div>
+
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+          <div class="slide-bg" style="background: linear-gradient(135deg, #378ADD 0%, #042C53 100%);"></div>
+          <div class="slide-content">
+            <p class="slide-label">Ocean</p>
+            <h3 class="slide-title">Deep Blue Horizon</h3>
+            <p class="slide-sub">Endless water, endless possibility</p>
+          </div>
+        </div>
+
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+          <div class="slide-bg" style="background: linear-gradient(135deg, #D85A30 0%, #4A1B0C 100%);"></div>
+          <div class="slide-content">
+            <p class="slide-label">Desert</p>
+            <h3 class="slide-title">Golden Hour</h3>
+            <p class="slide-sub">Light and shadow play on ancient dunes</p>
+          </div>
+        </div>
+
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+          <div class="slide-bg" style="background: linear-gradient(135deg, #7F77DD 0%, #26215C 100%);"></div>
+          <div class="slide-content">
+            <p class="slide-label">Night Sky</p>
+            <h3 class="slide-title">A Million Stars</h3>
+            <p class="slide-sub">The universe reminds us how small we are</p>
+          </div>
+        </div>
+
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+          <div class="slide-bg" style="background: linear-gradient(135deg, #BA7517 0%, #412402 100%);"></div>
+          <div class="slide-content">
+            <p class="slide-label">Autumn</p>
+            <h3 class="slide-title">Season of Change</h3>
+            <p class="slide-sub">Every leaf is a flower in its final moment</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="btn-nav btn-prev" id="prev" aria-label="Previous slide">
+        <i class="ti ti-chevron-left" aria-hidden="true"></i>
+      </button>
+      <button class="btn-nav btn-next" id="next" aria-label="Next slide">
+        <i class="ti ti-chevron-right" aria-hidden="true"></i>
+      </button>
+
+      <div class="progress-bar" id="progress"></div>
+    </div>
+
+    <div class="dots" id="dots" role="tablist" aria-label="Slide indicators"></div>
+
+    <div class="controls">
+      <span class="slide-counter" id="counter">1 / 5</span>
+      <button class="btn-play" id="playBtn" aria-label="Pause autoplay">
+        <i class="ti ti-player-pause" aria-hidden="true" id="playIcon"></i>
+        <span id="playLabel">Pause</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="slider.js"></script>
+</body>
+
+</html>
